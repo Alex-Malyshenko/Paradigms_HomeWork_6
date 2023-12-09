@@ -1,14 +1,14 @@
 
-def power_search(arr, target):
+def power_search(array, number):
     low = 0
-    high = len(arr) - 1
+    high = len(array) - 1
 
     while low <= high:
         mid = (low + high) // 2
 
-        if arr[mid] == target:
+        if array[mid] == number:
             return mid
-        elif arr[mid] < target:
+        elif array[mid] < number:
             low = mid + 1
         else:
             high = mid - 1
